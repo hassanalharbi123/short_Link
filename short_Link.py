@@ -5,8 +5,11 @@ print("""
 \033[3;34m                   ██    ███      ███    ██        ██    ██      ██          ██        \033[3;31m     ██           ██   ██    ██ ██    ██    ██
 \033[3;34m            █████████    ███      ███    ████████████    ██       ██         ██        \033[3;31m     █████████    ██   ██     ████    ██     ██
                                                         alhassan alharbi :\033[0;36m twitter ==>https://twitter.com/alhassanAlharb7\n""")
+import os
+os.system("pip install pyshorteners")
 import pyshorteners
 from webbrowser import open
+
 url=input("\033[3;35menter the url \n")
 a=pyshorteners.Shortener()
 b=a.tinyurl.short(url)
